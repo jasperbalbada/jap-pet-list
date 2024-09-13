@@ -29,6 +29,8 @@ function Navbar() {
               key={route.link}
               href={route.link}
               className="text-gray-700 hover:text-gray-400"
+              target={route.link.startsWith('http') ? "_blank" : "_self"}
+              rel={route.link.startsWith('http') ? "noopener noreferrer" : undefined}
             >
               {route.label}
             </Link>

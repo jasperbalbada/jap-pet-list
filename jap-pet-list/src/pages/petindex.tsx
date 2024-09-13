@@ -7,6 +7,7 @@ import { useState, useEffect, useRef } from "react";
 import { breeds } from "pet-breed-names";
 import { XMarkIcon, ArrowLongRightIcon, ArrowLongLeftIcon, ChevronRightIcon, CameraIcon } from "@heroicons/react/24/outline";
 import ConfirmationModal from "@/components/ConfirmationModal";
+import Footer from "@/components/Footer";
 
 interface Pet {
   id: number;
@@ -174,12 +175,12 @@ export default function Petlist(): JSX.Element {
   };
 
   return (
-    <div>
+    <div className="bg-gray-50">
       <Navbar/>
       <div className="bg-gray-50 min-h-screen flex">
         <div className="flex-1 flex flex-col py-10 px-40">
           <p className="py-3 text-left text-3xl font-bold tracking-tight text-gray-800">
-            Pet List
+            Pet Index
           </p>
           <PetProfile pets={pets} onPetClick={handlePetClick}/>
           <button
@@ -434,7 +435,7 @@ export default function Petlist(): JSX.Element {
                                 <select
                                   value={newPetGender}
                                   onChange={(e) => setNewPetGender(e.target.value)}
-                                  className="border border-gray-300 p-2 rounded-lg w-full mb-4"
+                                  className="border border-gray-300 p-2 rounded-lg w-full mb-4 text-gray-600"
                                 >
                                   <option value="">Select Gender</option>
                                   <option value="Male">Male</option>
@@ -531,6 +532,7 @@ export default function Petlist(): JSX.Element {
           />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
