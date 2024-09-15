@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="flex-1 text-black p-4">
         <Link
           href={mainRoutes[0].link}
-          className="text-red-700 font-bold hover:text-gray-400"
+          className="wave-text font-bold"
         >
           {mainRoutes[0].label}
         </Link>

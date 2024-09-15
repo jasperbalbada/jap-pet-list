@@ -17,7 +17,7 @@ function Navbar() {
         <div className="flex-1">
           <Link
             href={mainRoutes[0].link}
-            className="text-red-700 font-bold hover:text-gray-400"
+            className="font-bold wave-text"
           >
             {mainRoutes[0].label}
           </Link>

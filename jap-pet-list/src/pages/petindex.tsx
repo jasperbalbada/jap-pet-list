@@ -532,7 +532,10 @@ export default function Petlist(): JSX.Element {
           />
         </div>
       </div>
-      <Footer/>
+      <div className="bg-gray-50 flex flex-col border-t-2 border-gray-200 px-20">
+        {/* <div id="trade" className="flex-1 flex justify-center items-start border-x-2 border-b-2 border-gray-200 py-4"/> */}
+        <Footer/>
+      </div>
     </div>
   );
 }

@@ -8,7 +8,7 @@ const PetProfile: React.FC <{
     <div className="bg-white rounded-lg p-2 w-96 shadow-md">
       {pets.length === 0 ? (
         <div className="text-center text-gray-500 py-2">
-          No pets on your list yet
+          Start by adding a furbaby
         </div>
       ) : (
         <div className="flex flex-col divide-y divide-gray-200">
